@@ -64,8 +64,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         var longtitude : Double
         // Add a marker in Sydney and move the camera
         val bundle = intent.extras
-            latitude = bundle?.getString("latitude")?.toDouble()!!
-            longtitude = bundle?.getString("longtitude")?.toDouble()!!
+            //latitude = bundle?.getString("latitude")?.toDouble()!!
+            //longtitude = bundle?.getString("longtitude")?.toDouble()!!
+
+        latitude = 51.1247649
+        longtitude = 71.4375257
+
         val sydney = LatLng(latitude, longtitude)
         mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 12f))

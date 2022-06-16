@@ -62,8 +62,8 @@ class MainActivity : AppCompatActivity() {
             send.putExtras(bundle)
             startActivity(send)
         }
-        rawJSON()
-        get176()
+        //rawJSON()
+        //get176()
     }
 
     private fun getMyChain(){
